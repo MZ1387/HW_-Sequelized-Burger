@@ -6,7 +6,7 @@ var db = require('../models');
 router.get("/", function(req, res) {
     // send DATABASE DATA ARRAY into HANDLEBAR INDEX
     db.burger.findAll({}).then(function(results) {
-      console.log(results);
+      // console.log(results);
       var handlebarsObject = {
               burgers: results
           };
